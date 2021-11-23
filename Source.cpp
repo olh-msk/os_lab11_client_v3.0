@@ -45,7 +45,6 @@ void main()
         return;
     }
 
-    // Do-while loop to send and receive data
     char buf[4096];
     string userInput;
     string chosedOper;
@@ -68,13 +67,12 @@ void main()
     }
 
     while (true) {
-        ZeroMemory(buf, 4096);
+        /*ZeroMemory(buf, 4096);
         int bytesReceived = recv(sock, buf, 4096, 0);
         if (bytesReceived > 0)
         {
-            // Echo response to console
             cout << "[SERVER]> " << string(buf, 0, bytesReceived) << endl;
-        }
+        }*/
     }
 
     // Gracefully close down everything
